@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCustomizableControls", "WpfCustomizableControls\WpfCustomizableControls.csproj", "{0FAB7A00-1748-4C09-ABF9-8DBEE8346715}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfCustomizableControls", "WpfCustomizableControls\WpfCustomizableControls.csproj", "{0FAB7A00-1748-4C09-ABF9-8DBEE8346715}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCustomizableControls.DemoNet47", "WpfCustomizableControls.DemoNet47\WpfCustomizableControls.DemoNet47.csproj", "{813E739E-E079-4923-BCC5-E8AF4C19F299}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0FAB7A00-1748-4C09-ABF9-8DBEE8346715}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FAB7A00-1748-4C09-ABF9-8DBEE8346715}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FAB7A00-1748-4C09-ABF9-8DBEE8346715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{813E739E-E079-4923-BCC5-E8AF4C19F299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{813E739E-E079-4923-BCC5-E8AF4C19F299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{813E739E-E079-4923-BCC5-E8AF4C19F299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{813E739E-E079-4923-BCC5-E8AF4C19F299}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

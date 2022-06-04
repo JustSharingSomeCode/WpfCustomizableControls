@@ -50,5 +50,101 @@ namespace WpfCustomizableControls.Controls
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(WpfccButton), new FrameworkPropertyMetadata(typeof(WpfccButton)));
         }
+
+        public enum _Layout
+        {
+            OnlyText,
+            OnlyIcon,
+            IconText
+        };
+
+        public enum _IconAlignment
+        {
+            Left,
+            Top,
+            Right,
+            Bottom            
+        };
+
+        public _Layout Layout
+        {
+            get { return (_Layout)GetValue(LayoutProperty); }
+            set { SetValue(LayoutProperty, value); }
+        }
+        
+        public static readonly DependencyProperty LayoutProperty =
+            DependencyProperty.Register("Layout", typeof(_Layout), typeof(WpfccButton), new PropertyMetadata(_Layout.IconText));
+
+
+
+        public _IconAlignment IconAlignment
+        {
+            get { return (_IconAlignment)GetValue(IconAlignmentProperty); }
+            set { SetValue(IconAlignmentProperty, value); }
+        }
+        
+        public static readonly DependencyProperty IconAlignmentProperty =
+            DependencyProperty.Register("IconAlignment", typeof(_IconAlignment), typeof(WpfccButton), new PropertyMetadata(_IconAlignment.Left));        
+
+
+        #region Icon
+
+        #region Font
+
+        public FontFamily IconFont
+        {
+            get { return (FontFamily)GetValue(IconFontProperty); }
+            set { SetValue(IconFontProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for IconFont.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IconFontProperty =
+            DependencyProperty.Register("IconFont", typeof(FontFamily), typeof(WpfccButton), new PropertyMetadata(new FontFamily("Segoe MDL2 Assets")));
+
+        #endregion
+
+        #region Icon
+
+        public string Icon
+        {
+            get { return (string)GetValue(IconProperty); }
+            set { SetValue(IconProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for Icon.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IconProperty =
+            DependencyProperty.Register("Icon", typeof(string), typeof(WpfccButton), new PropertyMetadata("\uE128"));
+
+        #endregion
+
+        #region Size
+
+        public double IconSize
+        {
+            get { return (double)GetValue(IconSizeProperty); }
+            set { SetValue(IconSizeProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for IconSize.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IconSizeProperty =
+            DependencyProperty.Register("IconSize", typeof(double), typeof(WpfccButton), new PropertyMetadata((double)16));
+
+        #endregion
+
+        #endregion
+
+        #region Border
+
+        public CornerRadius CornerRadius
+        {
+            get { return (CornerRadius)GetValue(CornerRadiusProperty); }
+            set { SetValue(CornerRadiusProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for CornerRadius.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty CornerRadiusProperty =
+            DependencyProperty.Register("CornerRadius", typeof(CornerRadius), typeof(WpfccButton), new PropertyMetadata(new CornerRadius(5)));
+
+        #endregion
     }
 }

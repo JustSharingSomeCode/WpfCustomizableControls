@@ -11,5 +11,7 @@
         <controls:WpfccButton Margin="115,10,0,0" Layout="IconText" IconAlignment="Bottom" Foreground="Black" Height="100" VerticalAlignment="Top" HorizontalAlignment="Left" Width="100" IconSize="25"/>
         <controls:WpfccButton Margin="10,115,0,0" Layout="IconText" IconAlignment="Right" Foreground="Black" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="205"/>
         <controls:WpfccButton Margin="10,160,0,0" Layout="IconText" IconAlignment="Left" Foreground="Black" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="205"/>
+        <controls:WpfccButton Margin="10,205,0,0" Layout="OnlyText" IconAlignment="Left" Foreground="Black" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="205"/>
+        <controls:WpfccButton Margin="10,250,0,0" Layout="OnlyIcon" IconAlignment="Left" Foreground="Black" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="205"/>
     </Grid>
 </Window>

@@ -131,6 +131,38 @@ namespace WpfCustomizableControls.Controls
 
         #endregion
 
+        #region Brushes
+
+        #region Foreground
+
+        public Brush IconForeground
+        {
+            get { return (Brush)GetValue(IconForegroundProperty); }
+            set { SetValue(IconForegroundProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for IconForeground.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IconForegroundProperty =
+            DependencyProperty.Register("IconForeground", typeof(Brush), typeof(WpfccButton), new PropertyMetadata(new SolidColorBrush(Colors.Black)));
+
+        #endregion
+
+        #region ForegroundHover
+
+        public Brush IconForegroundHover
+        {
+            get { return (Brush)GetValue(IconForegroundHoverProperty); }
+            set { SetValue(IconForegroundHoverProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for IconForegroundHover.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IconForegroundHoverProperty =
+            DependencyProperty.Register("IconForegroundHover", typeof(Brush), typeof(WpfccButton), new PropertyMetadata(new SolidColorBrush(Colors.White)));
+
+        #endregion
+
+        #endregion
+
         #endregion
 
         #region Border
@@ -144,6 +176,38 @@ namespace WpfCustomizableControls.Controls
         // Using a DependencyProperty as the backing store for CornerRadius.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty CornerRadiusProperty =
             DependencyProperty.Register("CornerRadius", typeof(CornerRadius), typeof(WpfccButton), new PropertyMetadata(new CornerRadius(5)));
+
+        #endregion
+
+        #region Brushes
+
+        #region Background
+
+        public Brush BackgroundHover
+        {
+            get { return (Brush)GetValue(BackgroundHoverProperty); }
+            set { SetValue(BackgroundHoverProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for BackgroundHover.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty BackgroundHoverProperty =
+            DependencyProperty.Register("BackgroundHover", typeof(Brush), typeof(WpfccButton), new PropertyMetadata(new SolidColorBrush(Colors.Gray)));
+
+        #endregion
+
+        #region Foreground
+
+        public Brush ForegroundHover
+        {
+            get { return (Brush)GetValue(ForegroundHoverProperty); }
+            set { SetValue(ForegroundHoverProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for ForegroundHover.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty ForegroundHoverProperty =
+            DependencyProperty.Register("ForegroundHover", typeof(Brush), typeof(WpfccButton), new PropertyMetadata(new SolidColorBrush(Colors.White)));
+
+        #endregion
 
         #endregion
     }

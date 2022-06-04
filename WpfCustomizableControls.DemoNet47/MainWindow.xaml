@@ -7,11 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <controls:WpfccButton Margin="10,10,0,0" Layout="IconText" IconAlignment="Top" Foreground="Black" Height="100" VerticalAlignment="Top" HorizontalAlignment="Left" Width="100" IconSize="25"/>
-        <controls:WpfccButton Margin="115,10,0,0" Layout="IconText" IconAlignment="Bottom" Foreground="Black" Height="100" VerticalAlignment="Top" HorizontalAlignment="Left" Width="100" IconSize="25"/>
-        <controls:WpfccButton Margin="10,115,0,0" Layout="IconText" IconAlignment="Right" Foreground="Black" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="205"/>
-        <controls:WpfccButton Margin="10,160,0,0" Layout="IconText" IconAlignment="Left" Foreground="Black" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="205"/>
-        <controls:WpfccButton Margin="10,205,0,0" Layout="OnlyText" IconAlignment="Left" Foreground="Black" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="205"/>
-        <controls:WpfccButton Margin="10,250,0,0" Layout="OnlyIcon" IconAlignment="Left" Foreground="Black" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="205"/>
+        <controls:WpfccButton Margin="10,10,0,0" Layout="IconText" IconAlignment="Top" Height="100" VerticalAlignment="Top" HorizontalAlignment="Left" Width="100" IconSize="25"/>
+        <controls:WpfccButton Margin="115,10,0,0" Layout="IconText" IconAlignment="Bottom" Height="100" VerticalAlignment="Top" HorizontalAlignment="Left" Width="100" IconSize="25"/>
+        <controls:WpfccButton Margin="10,115,0,0" Layout="IconText" IconAlignment="Right" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="205"/>
+        <controls:WpfccButton Margin="10,160,0,0" Layout="IconText" IconAlignment="Left" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="205"/>
+        <controls:WpfccButton Margin="10,205,0,0" Layout="OnlyText" IconAlignment="Left" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="205"/>
+        <controls:WpfccButton Margin="10,250,0,0" Layout="OnlyIcon" IconAlignment="Left" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="205"/>
+
+        <controls:WpfccTextBox Margin="220,10,10,0" Height="35" VerticalAlignment="Top" IconSize="14" BorderThickness="3,1,3,1"/>
+        <controls:WpfccTextBox Margin="220,50,10,0" Height="35" VerticalAlignment="Top" IconSize="14" ShowIcon="False" BorderThickness="3,1,3,1"/>
     </Grid>
 </Window>

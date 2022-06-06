@@ -36,6 +36,11 @@ namespace WpfCustomizableControls.Groups
             {
                 buttons = value;
 
+                if (buttons.Count >= 1)
+                {
+                    lastSelectedButton = buttons[0];
+                }
+
                 for(int i = 0; i < buttons.Count; i++)
                 {
                     ApplyStyle(buttons[i], i == 0);

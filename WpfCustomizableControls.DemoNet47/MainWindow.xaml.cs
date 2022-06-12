@@ -13,6 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using WpfCustomizableControls.Controls;
+using WpfCustomizableControls.Groups;
+
 namespace WpfCustomizableControls.DemoNet47
 {
     /// <summary>
@@ -23,6 +26,21 @@ namespace WpfCustomizableControls.DemoNet47
         public MainWindow()
         {
             InitializeComponent();
+
+            WpfccButtonGroup = new WpfccButtonGroup()
+            {                
+                SelectedButtonBackground = new SolidColorBrush(Colors.Transparent),
+                SelectedButtonIconForeground = new SolidColorBrush(Colors.CornflowerBlue),
+                SelectedButtonForeground = new SolidColorBrush(Colors.CornflowerBlue),
+
+                UnselectedButtonBackground = new SolidColorBrush(Colors.Transparent),
+                UnselectedButtonIconForeground = new SolidColorBrush(Colors.Black),
+                UnselectedButtonForeground = new SolidColorBrush(Colors.Black),
+
+                Buttons = new List<WpfccButton>() { Item1, Item2, Item3, Item4, Item5, Item6, Item7 },
+            };
         }
+
+        private WpfccButtonGroup WpfccButtonGroup;
     }
 }

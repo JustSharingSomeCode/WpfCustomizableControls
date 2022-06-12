@@ -123,11 +123,24 @@
 
                         </Trigger>
 
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="parentBorder" Property="Background" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundHover}"/>
-                            <Setter TargetName="IconLbl" Property="Foreground" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IconForegroundHover}"/>
-                            <Setter TargetName="Content" Property="TextBlock.Foreground" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ForegroundHover}"/>
-                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver"
+                                           Value="True" />
+                                <Condition Property="EnableHoverBrush"
+                                           Value="True" />
+                            </MultiTrigger.Conditions>
+
+                            <Setter TargetName="parentBorder"
+                                    Property="Background"
+                                    Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=BackgroundHover}" />
+                            <Setter TargetName="IconLbl"
+                                    Property="Foreground"
+                                    Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IconForegroundHover}" />
+                            <Setter TargetName="Content"
+                                    Property="TextBlock.Foreground"
+                                    Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ForegroundHover}" />
+                        </MultiTrigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>

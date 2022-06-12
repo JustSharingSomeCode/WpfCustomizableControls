@@ -34,5 +34,6 @@
                 </StackPanel>
             </Grid>
         </Border>
+        <controls:WpfccExpander Margin="220,205,10,270" Header="asd" BorderBrush="Red"/>
     </Grid>
 </Window>

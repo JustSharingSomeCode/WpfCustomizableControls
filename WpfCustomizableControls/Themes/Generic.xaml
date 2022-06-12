@@ -6,5 +6,6 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccButton.xaml"/>
         <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccTextBox.xaml"/>
+        <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccExpander.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

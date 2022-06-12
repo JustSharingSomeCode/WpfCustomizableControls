@@ -8,5 +8,6 @@
         <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccTextBox.xaml"/>
         <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccExpander.xaml" />
         <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccToggleButton.xaml" />
+        <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccScrollBar.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

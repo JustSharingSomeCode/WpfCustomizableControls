@@ -141,6 +141,11 @@
                     </StackPanel>
                 </Grid>
             </Border>
+
+            <controls:WpfccScrollBar Margin="220,205,10,350"
+                                     Orientation="Horizontal"
+                                     Height="5"/>
+
             <StackPanel Margin="10,295,10,10">
                 <StackPanel.Resources>
                     <Style TargetType="{x:Type controls:WpfccExpander}">

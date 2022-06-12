@@ -9,7 +9,7 @@
         Title="MainWindow"
         Height="576"
         Width="1024">
-    <ScrollViewer VerticalScrollBarVisibility="Auto">
+    <controls:WpfccScrollViewer VerticalScrollBarVisibility="Auto" CornerRadius="5" Margin="5">
         <Grid>
             <controls:WpfccButton Margin="10,10,0,0"
                                   Layout="IconText"
@@ -142,10 +142,6 @@
                 </Grid>
             </Border>
 
-            <controls:WpfccScrollBar Margin="220,205,10,350"
-                                     Orientation="Horizontal"
-                                     Height="5"/>
-
             <StackPanel Margin="10,295,10,10">
                 <StackPanel.Resources>
                     <Style TargetType="{x:Type controls:WpfccExpander}">
@@ -194,5 +190,5 @@
                 </controls:WpfccExpander>
             </StackPanel>
         </Grid>
-    </ScrollViewer>
+    </controls:WpfccScrollViewer>
 </Window>

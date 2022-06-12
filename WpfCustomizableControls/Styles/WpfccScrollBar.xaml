@@ -3,6 +3,10 @@
                     xmlns:local="clr-namespace:WpfCustomizableControls.Controls">
 
     <Style TargetType="{x:Type local:WpfccScrollBar}">
+        <Setter Property="MinWidth"
+                Value="8" />
+        <Setter Property="MinHeight"
+                Value="8" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:WpfccScrollBar}">

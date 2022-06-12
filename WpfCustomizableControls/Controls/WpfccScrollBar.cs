@@ -87,6 +87,7 @@ namespace WpfCustomizableControls.Controls
         #region Hover
 
         #region ThumBrushHover
+
         public Brush ThumbBrushHover
         {
             get { return (Brush)GetValue(ThumbBrushHoverProperty); }

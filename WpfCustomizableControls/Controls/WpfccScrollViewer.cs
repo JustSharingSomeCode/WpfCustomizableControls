@@ -55,7 +55,6 @@ namespace WpfCustomizableControls.Controls
 
         #region ScrollBarBackground
 
-
         public Brush ScrollBarBackground
         {
             get { return (Brush)GetValue(ScrollBarBackgroundProperty); }
@@ -88,7 +87,6 @@ namespace WpfCustomizableControls.Controls
 
         #region CornerRadius
 
-
         public CornerRadius CornerRadius
         {
             get { return (CornerRadius)GetValue(CornerRadiusProperty); }
@@ -104,7 +102,6 @@ namespace WpfCustomizableControls.Controls
         #endregion
 
         #region ContentMargin
-
 
         public Thickness ContentMargin
         {

@@ -84,7 +84,19 @@ namespace WpfCustomizableControls.Controls
         }
         
         public static readonly DependencyProperty IconAlignmentProperty =
-            DependencyProperty.Register("IconAlignment", typeof(_IconAlignment), typeof(WpfccButton), new PropertyMetadata(_IconAlignment.Left));        
+            DependencyProperty.Register("IconAlignment", typeof(_IconAlignment), typeof(WpfccButton), new PropertyMetadata(_IconAlignment.Left));
+
+
+
+        public bool EnableHoverBrush
+        {
+            get { return (bool)GetValue(EnableHoverBrushProperty); }
+            set { SetValue(EnableHoverBrushProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for EnableHoverBrush.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty EnableHoverBrushProperty =
+            DependencyProperty.Register("EnableHoverBrush", typeof(bool), typeof(WpfccButton), new PropertyMetadata(true));
 
 
         #region Icon

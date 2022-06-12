@@ -52,6 +52,9 @@ namespace WpfCustomizableControls.Controls
         }
 
 
+        #region Brushes
+
+        #region HeaderBrush
 
         public Brush HeaderBrush
         {
@@ -63,6 +66,9 @@ namespace WpfCustomizableControls.Controls
         public static readonly DependencyProperty HeaderBrushProperty =
             DependencyProperty.Register("HeaderBrush", typeof(Brush), typeof(WpfccExpander), new PropertyMetadata(new SolidColorBrush(Colors.Gray)));
 
+        #endregion
+
+        #region ContentBrush
 
         public Brush ContentBrush
         {
@@ -73,6 +79,12 @@ namespace WpfCustomizableControls.Controls
         // Using a DependencyProperty as the backing store for ContentBrush.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ContentBrushProperty =
             DependencyProperty.Register("ContentBrush", typeof(Brush), typeof(WpfccExpander), new PropertyMetadata(new SolidColorBrush(Colors.LightGray)));
+
+        #endregion
+
+        #endregion
+
+        #region ExpandIcon
 
         #region Foreground
 
@@ -99,6 +111,8 @@ namespace WpfCustomizableControls.Controls
         // Using a DependencyProperty as the backing store for IconFont.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty IconFontProperty =
             DependencyProperty.Register("IconFont", typeof(FontFamily), typeof(WpfccExpander), new PropertyMetadata(new FontFamily("Segoe MDL2 Assets")));
+
+        #endregion
 
         #endregion
     }

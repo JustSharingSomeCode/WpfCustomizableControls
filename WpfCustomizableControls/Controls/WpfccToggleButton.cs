@@ -116,7 +116,7 @@ namespace WpfCustomizableControls.Controls
 
         #endregion
 
-
+        #region CornerRadius
 
         public CornerRadius CornerRadius
         {
@@ -128,6 +128,6 @@ namespace WpfCustomizableControls.Controls
         public static readonly DependencyProperty CornerRadiusProperty =
             DependencyProperty.Register("CornerRadius", typeof(CornerRadius), typeof(WpfccToggleButton), new PropertyMetadata(new CornerRadius(5)));
 
-
+        #endregion
     }
 }

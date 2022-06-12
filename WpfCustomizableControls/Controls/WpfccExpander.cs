@@ -50,5 +50,56 @@ namespace WpfCustomizableControls.Controls
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(WpfccExpander), new FrameworkPropertyMetadata(typeof(WpfccExpander)));
         }
+
+
+
+        public Brush HeaderBrush
+        {
+            get { return (Brush)GetValue(HeaderBrushProperty); }
+            set { SetValue(HeaderBrushProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for HeaderBrush.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty HeaderBrushProperty =
+            DependencyProperty.Register("HeaderBrush", typeof(Brush), typeof(WpfccExpander), new PropertyMetadata(new SolidColorBrush(Colors.Gray)));
+
+
+        public Brush ContentBrush
+        {
+            get { return (Brush)GetValue(ContentBrushProperty); }
+            set { SetValue(ContentBrushProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for ContentBrush.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty ContentBrushProperty =
+            DependencyProperty.Register("ContentBrush", typeof(Brush), typeof(WpfccExpander), new PropertyMetadata(new SolidColorBrush(Colors.LightGray)));
+
+        #region Foreground
+
+        public Brush IconForeground
+        {
+            get { return (Brush)GetValue(IconForegroundProperty); }
+            set { SetValue(IconForegroundProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for IconForeground.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IconForegroundProperty =
+            DependencyProperty.Register("IconForeground", typeof(Brush), typeof(WpfccExpander), new PropertyMetadata(new SolidColorBrush(Colors.Black)));
+
+        #endregion
+
+        #region Font
+
+        public FontFamily IconFont
+        {
+            get { return (FontFamily)GetValue(IconFontProperty); }
+            set { SetValue(IconFontProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for IconFont.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IconFontProperty =
+            DependencyProperty.Register("IconFont", typeof(FontFamily), typeof(WpfccExpander), new PropertyMetadata(new FontFamily("Segoe MDL2 Assets")));
+
+        #endregion
     }
 }

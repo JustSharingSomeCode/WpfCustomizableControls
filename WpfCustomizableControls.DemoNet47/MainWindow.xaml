@@ -151,9 +151,13 @@
                                     Height="40"
                                     VerticalAlignment="Top" />
 
-            <controls:WpfccComboBox Margin="220,0,10,0"
+            <controls:WpfccComboBox Margin="220,250,10,0"
                                     Height="40"
-                                    VerticalAlignment="Center" BorderThickness="0">
+                                    VerticalAlignment="Top"
+                                    BorderThickness="1"
+                                    Background="Gray"
+                                    ItemBackgroundHover="#FFC3C3C3"
+                                    FontSize="20">
 
                 <System:String>Item1</System:String>
                 <System:String>Item2</System:String>

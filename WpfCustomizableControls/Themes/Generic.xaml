@@ -4,11 +4,12 @@
     xmlns:local="clr-namespace:WpfCustomizableControls.Controls">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccButton.xaml"/>
-        <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccTextBox.xaml"/>
+        <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccButton.xaml" />
+        <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccTextBox.xaml" />
         <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccExpander.xaml" />
         <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccToggleButton.xaml" />
         <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccScrollBar.xaml" />
         <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccScrollViewer.xaml" />
+        <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccCheckBox.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

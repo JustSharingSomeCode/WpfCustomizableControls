@@ -9,7 +9,9 @@
         Title="MainWindow"
         Height="576"
         Width="1024">
-    <controls:WpfccScrollViewer VerticalScrollBarVisibility="Auto" CornerRadius="5" Margin="5">
+    <controls:WpfccScrollViewer VerticalScrollBarVisibility="Auto"
+                                CornerRadius="5"
+                                Margin="5">
         <Grid>
             <controls:WpfccButton Margin="10,10,0,0"
                                   Layout="IconText"
@@ -141,6 +143,12 @@
                     </StackPanel>
                 </Grid>
             </Border>
+
+            <controls:WpfccCheckBox Margin="220,205,10,0"
+                                    Content="Hello World!"
+                                    IsChecked="True"
+                                    Height="40"
+                                    VerticalAlignment="Top"/>
 
             <StackPanel Margin="10,295,10,10">
                 <StackPanel.Resources>

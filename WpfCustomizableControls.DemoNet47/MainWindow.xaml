@@ -11,7 +11,8 @@
         Width="1024">
     <controls:WpfccScrollViewer VerticalScrollBarVisibility="Auto"
                                 CornerRadius="5"
-                                Margin="5">
+                                Margin="5"
+                                >
         <Grid>
             <controls:WpfccButton Margin="10,10,0,0"
                                   Layout="IconText"

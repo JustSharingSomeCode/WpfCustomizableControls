@@ -81,6 +81,20 @@ namespace WpfCustomizableControls.Controls
 
         #endregion
 
+        #region ThumbBrushHover
+
+        public Brush ThumbBrushHover
+        {
+            get { return (Brush)GetValue(ThumbBrushHoverProperty); }
+            set { SetValue(ThumbBrushHoverProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for ThumbBrushHover.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty ThumbBrushHoverProperty =
+            DependencyProperty.Register("ThumbBrushHover", typeof(Brush), typeof(WpfccScrollViewer), new PropertyMetadata(new SolidColorBrush(Colors.CornflowerBlue)));
+
+        #endregion
+
         #endregion
 
         #region Border

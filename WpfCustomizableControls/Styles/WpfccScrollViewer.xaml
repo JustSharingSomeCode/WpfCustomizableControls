@@ -29,7 +29,8 @@
                                                   Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}"
                                                   CornerRadius="{TemplateBinding CornerRadius}"
                                                   Background="{TemplateBinding ScrollBarBackground}"
-                                                  ThumbBrush="{TemplateBinding ThumbBrush}" />
+                                                  ThumbBrush="{TemplateBinding ThumbBrush}"
+                                                  ThumbBrushHover="{TemplateBinding ThumbBrushHover}"/>
                             <local:WpfccScrollBar x:Name="PART_HorizontalScrollBar"
                                                   Orientation="Horizontal"
                                                   Grid.Row="1"
@@ -39,7 +40,8 @@
                                                   Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}"
                                                   CornerRadius="{TemplateBinding CornerRadius}"
                                                   Background="{TemplateBinding ScrollBarBackground}"
-                                                  ThumbBrush="{TemplateBinding ThumbBrush}" />
+                                                  ThumbBrush="{TemplateBinding ThumbBrush}"
+                                                  ThumbBrushHover="{TemplateBinding ThumbBrushHover}"/>
 
                         </Grid>
                     </Border>

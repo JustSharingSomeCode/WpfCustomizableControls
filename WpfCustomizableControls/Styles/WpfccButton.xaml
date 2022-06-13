@@ -3,6 +3,8 @@
                     xmlns:local="clr-namespace:WpfCustomizableControls.Controls">
 
     <Style TargetType="{x:Type local:WpfccButton}">
+        <Setter Property="Foreground"
+                Value="Black" />
         <Setter Property="Content" Value="Hello World!"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="BorderBrush" Value="Gray"/>

@@ -11,5 +11,6 @@
         <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccScrollBar.xaml" />
         <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccScrollViewer.xaml" />
         <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccCheckBox.xaml" />
+        <ResourceDictionary Source="/WpfCustomizableControls;component/Styles/WpfccComboBox.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

@@ -1,18 +1,18 @@
-﻿<Window x:Class="WpfCustomizableControls.DemoNet47.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfCustomizableControls.DemoNet47"
         xmlns:controls="clr-namespace:WpfCustomizableControls.Controls;assembly=WpfCustomizableControls"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        x:Class="WpfCustomizableControls.DemoNet47.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow"
         Height="576"
         Width="1024">
     <controls:WpfccScrollViewer VerticalScrollBarVisibility="Auto"
                                 CornerRadius="5"
-                                Margin="5"
-                                >
+                                Margin="5">
         <Grid>
             <controls:WpfccButton Margin="10,10,0,0"
                                   Layout="IconText"
@@ -149,7 +149,21 @@
                                     Content="Hello World!"
                                     IsChecked="True"
                                     Height="40"
-                                    VerticalAlignment="Top"/>
+                                    VerticalAlignment="Top" />
+
+            <controls:WpfccComboBox Margin="220,250,10,0"
+                                    Height="40"
+                                    VerticalAlignment="Top"
+                                    BorderThickness="1"
+                                    Background="Gray"
+                                    ItemBackgroundHover="#FFC3C3C3"
+                                    FontSize="20">
+
+                <System:String>Item1</System:String>
+                <System:String>Item2</System:String>
+                <System:String>Item3</System:String>
+
+            </controls:WpfccComboBox>
 
             <StackPanel Margin="10,295,10,10">
                 <StackPanel.Resources>

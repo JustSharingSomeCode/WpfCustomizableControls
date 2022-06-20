@@ -41,13 +41,14 @@
                             <Label x:Name="Placeholder"
                                    Grid.Column="1"
                                    Content="{TemplateBinding PlaceholderText}"
-                                   VerticalContentAlignment="Center"
-                                   HorizontalContentAlignment="Left"
+                                   VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                   HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
                                    FontFamily="{TemplateBinding FontFamily}"
                                    FontSize="{TemplateBinding FontSize}"
                                    Foreground="{TemplateBinding PlaceholderForeground}"
                                    Visibility="Hidden"
-                                   Padding="2,0,2,0"/>
+                                   Padding="{TemplateBinding Padding}"
+                                   Margin="2"/>
 
                             <ScrollViewer x:Name="PART_ContentHost" Grid.Column="1" VerticalScrollBarVisibility="Auto"/>
                         </Grid>

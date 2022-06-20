@@ -63,7 +63,7 @@
                         <Border Background="{TemplateBinding Background}"
                                 CornerRadius="5">
                             <local:WpfccToggleButton HorizontalAlignment="Right"
-                                                     IconForeground="White"
+                                                     IconForeground="{Binding IconBrush, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:WpfccComboBox}}}"
                                                      IsChecked="{Binding IsDropDownOpen, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:WpfccComboBox}}}"
                                                      ClickMode="Press"
                                                      Margin="0,0,12,0" />

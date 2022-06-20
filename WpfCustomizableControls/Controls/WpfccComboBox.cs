@@ -137,5 +137,18 @@ namespace WpfCustomizableControls.Controls
         // Using a DependencyProperty as the backing store for FontSize.  This enables animation, styling, binding, etc...
         public new static readonly DependencyProperty FontSizeProperty =
             DependencyProperty.Register("FontSize", typeof(double), typeof(WpfccComboBox), new PropertyMetadata((double)12));
+
+
+        public Brush IconBrush
+        {
+            get { return (Brush)GetValue(IconBrushProperty); }
+            set { SetValue(IconBrushProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for IconBrush.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IconBrushProperty =
+            DependencyProperty.Register("IconBrush", typeof(Brush), typeof(WpfccComboBox), new PropertyMetadata(new SolidColorBrush(Colors.White)));
+
+
     }
 }

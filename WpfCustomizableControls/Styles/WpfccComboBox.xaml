@@ -61,6 +61,8 @@
                 <ControlTemplate TargetType="{x:Type local:WpfccComboBox}">
                     <Grid>
                         <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
                                 CornerRadius="5">
                             <local:WpfccToggleButton HorizontalAlignment="Right"
                                                      IconForeground="{Binding IconBrush, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:WpfccComboBox}}}"

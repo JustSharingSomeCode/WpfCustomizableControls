@@ -157,7 +157,9 @@
                                     BorderThickness="1"
                                     Background="Gray"
                                     ItemBackgroundHover="#FFC3C3C3"
-                                    FontSize="20" IconBrush="Red">
+                                    FontSize="20" IconBrush="Red"
+                                    SelectedIndex="0"
+                                    Padding="10,0,0,0">
 
                 <System:String>Item1</System:String>
                 <System:String>Item2</System:String>
